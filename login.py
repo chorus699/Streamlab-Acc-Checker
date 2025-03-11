@@ -12,7 +12,7 @@ import threading
 from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import unquote
 
-proxies = open("input/proxies.txt").read().splitlines()
+proxies = open("proxies.txt").read().splitlines()
 
 def get_proxy():
     proxy = random.choice(proxies)
